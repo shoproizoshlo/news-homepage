@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0"
+    />
     <!-- displays site properly based on user's device -->
 
     <link
@@ -13,109 +16,141 @@
     />
 
     <title>Frontend Mentor | News homepage</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <header>
-      <img src="./assets/images/logo.svg" alt="" />
-    </header>
-    <nav>
-      <ul>
-        <li>Home</li>
-        <li>New</li>
-        <li>Popular</li>
-        <li>Popular</li>
-        <li>Trending</li>
-        <li>Categories</li>
-      </ul>
-    </nav>
-    <main>
-      <div>
-        <div>
-          <img
-            src="./assets/images/image-web-3-desktop.jpg"
-            alt="image-web-3"
-          />
+    <div class="wrapper d-md-flex flex-column">
+      <header>
+        <div
+          class="container d-md-flex justify-content-between align-items-center"
+        >
+          <div>
+            <img src="./assets/images/logo.svg" alt="logo" />
+          </div>
+          <nav>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="/">New</a></li>
+              <li><a href="/">Popular</a></li>
+              <li><a href="/">Trending</a></li>
+              <li><a href="/">Categories</a></li>
+            </ul>
+          </nav>
         </div>
-        <div>
-          <h1>The Bright Future of Web 3.0?</h1>
-          <p>
-            We dive into the next evolution of the web that claims to put the
-            power of the platforms back into the hands of the people. But is it
-            really fulfilling its promise?
-          </p>
-          <button>Read more</button>
+      </header>
+
+      <main>
+        <div class="container">
+          <div class="articles d-md-flex">
+            <div class="main-article-area">
+              <article class="main-article">
+                <div class="main-image">
+                  <picture>
+                    <source
+                      srcset="/assets/images/image-web-3-mobile.jpg"
+                      type="image/jpg"
+                      media="(max-width:500px)"
+                    />
+                    <img
+                      src="./assets/images/image-web-3-desktop.jpg"
+                      alt="image-web-3"
+                    />
+                  </picture>
+                </div>
+                <div class="article d-md-flex">
+                  <h1>The Bright Future of Web 3.0?</h1>
+                  <div class="text">
+                    <p>
+                      We dive into the next evolution of the web that claims to
+                      put the power of the platforms back into the hands of the
+                      people. But is it really fulfilling its promise?
+                    </p>
+                    <button>Read more</button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="new-article-area">
+              <h2>New</h2>
+              <article>
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+              </article>
+              <hr />
+              <article>
+                <h3>The Downsides of AI Artistry</h3>
+                <p>
+                  What are the possible adverse effects of on-demand AI image
+                  generation?
+                </p>
+              </article>
+              <hr />
+              <article>
+                <h3>Is VC Funding Drying Up?</h3>
+                <p>
+                  Private funding by VC firms is down 50% YOY. We take a look at
+                  what that means.
+                </p>
+              </article>
+            </div>
+          </div>
+          <div class="3-articles-area d-md-flex">
+            <div class="d-md-flex">
+              <article class="d-md-flex">
+                <div>
+                  <img
+                    src="./assets/images/image-retro-pcs.jpg"
+                    alt="image retro pcs"
+                  />
+                </div>
+                <div>
+                  <p>01</p>
+                  <h4>Reviving Retro PCs</h4>
+                  <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+              </article>
+            </div>
+            <div class="d-md-flex">
+              <article class="d-md-flex">
+                <div>
+                  <img
+                    src="./assets/images/image-top-laptops.jpg"
+                    alt="image top laptops"
+                  />
+                </div>
+                <div>
+                  <p>02</p>
+                  <h4>Top 10 Laptops of 2022</h4>
+                  <p>Our best picks for various needs and budgets.</p>
+                </div>
+              </article>
+            </div>
+            <div class="d-md-flex">
+              <article class="d-md-flex">
+                <div>
+                  <img
+                    src="./assets/images/image-gaming-growth.jpg"
+                    alt="image gaming growth"
+                  />
+                </div>
+                <div>
+                  <p>03</p>
+                  <h4>he Growth of Gaming</h4>
+                  <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+              </article>
+            </div>
+          </div>
         </div>
-      </div>
-      <div>
-        <h2>New</h2>
-        <h3>Hydrogen VS Electric Cars</h3>
-        <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
-        <hr />
-        <h3>The Downsides of AI Artistry</h3>
-        <p>
-          What are the possible adverse effects of on-demand AI image
-          generation?
-        </p>
-        <hr />
-        <h3>Is VC Funding Drying Up?</h3>
-        <p>
-          Private funding by VC firms is down 50% YOY. We take a look at what
-          that means.
-        </p>
-      </div>
-      <div>
-        <div>
-          <div>
-            <img
-              src="./assets/images/image-retro-pcs.jpg"
-              alt="image retro pcs"
-            />
-          </div>
-          <div>
-            <p>01</p>
-            <h4>Reviving Retro PCs</h4>
-            <p>What happens when old PCs are given modern upgrades?</p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              src="./assets/images/image-top-laptops.jpg"
-              alt="image top laptops"
-            />
-          </div>
-          <div>
-            <p>02</p>
-            <h4>Top 10 Laptops of 2022</h4>
-            <p>Our best picks for various needs and budgets.</p>
-          </div>
-        </div>
-        <div>
-          <div>
-            <img
-              src="./assets/images/image-gaming-growth.jpg"
-              alt="image gaming growth"
-            />
-          </div>
-          <div>
-            <p>03</p>
-            <h4>he Growth of Gaming</h4>
-            <p>How the pandemic has sparked fresh opportunities.</p>
-          </div>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
     <footer>
       <div class="attribution">
         Challenge by
@@ -124,5 +159,11 @@
         >. Coded by <a href="#">Your Name Here</a>.
       </div>
     </footer>
+    <!-- bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
