@@ -66,6 +66,7 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 15px;
+  font-weight: 400;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -110,6 +111,8 @@ h6 {
 
 /*--------------------*/
 .wrapper {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   min-height: 100%;
 }
@@ -119,6 +122,11 @@ h6 {
   padding: 0 15px;
 }
 
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 nav ul {
   padding: 0;
   margin: 0;
@@ -129,7 +137,14 @@ ul li {
   padding: 0;
   margin-right: 5px;
   list-style: none;
+  color: var(--neutral-dark-grayish-blue);
 }
+ul li:active,
+ul li:hover {
+  cursor: pointer;
+  color: var(--primary-soft-red);
+}
+
 main {
   flex: 1 1 auto;
 }
@@ -140,25 +155,52 @@ main {
   flex: 3;
   margin-right: 30px;
 }
-.main-image {
+.main-article-image {
   min-height: 150px;
 }
-.main-image img {
+.main-article-image img {
   width: 100%;
 }
-.article {
+.main-article-text {
   display: flex;
   margin: 20px 0;
 }
-.article h1 {
+.main-article-text h1 {
   flex: 1;
+  padding-right: 20px;
+  color: var(--neutral-very-dark-blue);
+  font-size: 4em;
+  font-weight: 800;
 }
-.text {
+.main-article-text div {
   flex: 1;
+  color: var(--neutral-dark-grayish-blue);
+}
+.main-article-text button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  color: var(--neutral-off-white);
+  background-color: var(--primary-soft-red);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+.main-article-text button:active,
+.main-article-text button:hover {
+  cursor: pointer;
+  background-color: var(--neutral-very-dark-blue);
 }
 
 .new-article-area {
   flex: 1;
+  background-color: var(--neutral-very-dark-blue);
+}
+.new-article-area h2 {
+  color: var(--primary-soft-orange);
+  font-size: 2em;
+}
+.new-article-area h3 {
+  color: var(--neutral-off-white);
 }
 
 .three-articles-area {
@@ -167,9 +209,22 @@ main {
 .three-articles-area + div {
   display: flex;
 }
-.three-articles-area div article {
+.three-articles-area article {
   display: flex;
 }
+.single-article-text {
+  flex: 3;
+  padding-left: 20px;
+}
+.single-article-img {
+  min-width: 100px;
+  /* max-height: 150px; */
+}
+.single-article-img img {
+  width: 100%;
+  height: auto;
+}
+
 /* footer */
 .attribution {
   font-size: 11px;
