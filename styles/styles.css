@@ -67,6 +67,8 @@ body {
   line-height: 1;
   font-size: 15px;
   font-weight: 400;
+  font-family: "Inter", sans-serif;
+  background-color: var(--neutral-off-white);
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -117,11 +119,14 @@ h6 {
   min-height: 100%;
 }
 .container {
-  max-width: 1050px;
-  margin: 20px auto 0 auto;
+  max-width: 1091px;
+  margin: 55px auto 0 auto;
   padding: 0 15px;
 }
 
+header {
+  padding-top: 37px;
+}
 header div {
   display: flex;
   justify-content: space-between;
@@ -164,27 +169,29 @@ main {
 }
 .main-article-text {
   display: flex;
-  margin: 20px 0;
+  margin-top: 25px;
 }
 .main-article-text h1 {
   flex: 1;
   padding-right: 45px;
   color: var(--neutral-very-dark-blue);
-  font-size: 4em;
+  font-size: 3.5em;
+  line-height: 1.1em;
   font-weight: 800;
 }
 .main-article-text div {
   flex: 1;
   color: var(--neutral-dark-grayish-blue);
-  line-height: 21px;
+  line-height: 24px;
 }
 .main-article-text button {
-  margin-top: 30px;
-  padding: 15px 20px;
+  margin-top: 20px;
+  padding: 12px 32px;
   color: var(--neutral-off-white);
   background-color: var(--primary-soft-red);
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  font-size: 13px;
   font-weight: 700;
 }
 .main-article-text button:active,
