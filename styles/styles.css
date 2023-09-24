@@ -140,12 +140,17 @@ nav ul {
 }
 ul li {
   padding: 0;
-  margin-right: 5px;
   list-style: none;
+  margin-right: 40px;
+}
+ul li:last-child {
+  margin-right: 0;
+}
+li a {
   color: var(--neutral-dark-grayish-blue);
 }
-ul li:active,
-ul li:hover {
+li a:active,
+li a:hover {
   cursor: pointer;
   color: var(--primary-soft-red);
 }
@@ -221,9 +226,16 @@ hr {
   font-weight: 700;
 }
 .new-article-area h3 {
-  color: var(--neutral-off-white);
   font-weight: 700;
   font-size: 1.4em;
+}
+h3 a {
+  color: var(--neutral-off-white);
+}
+h3 a:active,
+h3 a:hover {
+  cursor: pointer;
+  color: var(--primary-soft-orange);
 }
 .new-article-area p {
   margin: 0;
@@ -258,7 +270,14 @@ hr {
 .single-article-text h4 {
   font-weight: 700;
   font-size: 1.2em;
+}
+h4 a {
   color: var(--neutral-very-dark-blue);
+}
+h4 a:active,
+h4 a:hover {
+  cursor: pointer;
+  color: var(--primary-soft-red);
 }
 .single-article-text .num {
   font-size: 2em;
