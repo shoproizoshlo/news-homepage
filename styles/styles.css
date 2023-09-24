@@ -198,6 +198,7 @@ main {
   letter-spacing: 5px;
   font-size: 13px;
   font-weight: 700;
+  transition: 0.3s ease-out;
 }
 .main-article-text button:active,
 .main-article-text button:hover {
@@ -212,7 +213,7 @@ hr {
 
 .new-article-area {
   flex: 1;
-  padding: 25px;
+  padding: 25px 31px;
   background-color: var(--neutral-very-dark-blue);
   color: var(--neutral-grayish-blue);
 }
@@ -227,10 +228,11 @@ hr {
 }
 .new-article-area h3 {
   font-weight: 700;
-  font-size: 1.4em;
+  font-size: 1.37em;
 }
 h3 a {
   color: var(--neutral-off-white);
+  transition: 0.3s ease-out;
 }
 h3 a:active,
 h3 a:hover {
@@ -256,7 +258,7 @@ h3 a:hover {
 
 .single-article {
   flex: 1;
-  margin-right: 25px;
+  margin-right: 12px;
 }
 .single-article:last-child {
   margin-right: 0;
@@ -273,6 +275,7 @@ h3 a:hover {
 }
 h4 a {
   color: var(--neutral-very-dark-blue);
+  transition: 0.3s ease-out;
 }
 h4 a:active,
 h4 a:hover {
@@ -310,7 +313,12 @@ h4 a:hover {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--neutral-dark-grayish-blue);
+  transition: 0.3s ease-out;
+}
+.attribution a:hover,
+.attribution a:active {
+  color: var(--primary-soft-orange);
 }
 
 @media screen and (max-width: 1200px) {
