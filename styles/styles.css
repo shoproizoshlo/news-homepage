@@ -120,7 +120,7 @@ h6 {
 }
 .container {
   max-width: 1145px;
-  margin: 50px auto 0 auto;
+  margin: 40px auto 0 auto;
   padding: 0 15px;
 }
 
@@ -216,11 +216,11 @@ main {
   flex: 1 1 auto;
 }
 .articles {
-  margin-top: 180px;
+  margin-top: 175px;
   margin-bottom: 30px;
 }
 .main-article-area {
-  flex: 2.4;
+  flex: 2.5;
   margin-right: 30px;
 }
 .main-article-image {
@@ -242,7 +242,7 @@ main {
   font-weight: 800;
 }
 .main-article-text div {
-  flex: 1.05;
+  flex: 1;
   color: var(--neutral-dark-grayish-blue);
   line-height: 24px;
 }
@@ -321,7 +321,7 @@ h3 a:hover {
 .single-article-text {
   /* justify-content: space-between;
     align-items: stretch; */
-  flex: 2.1;
+  flex: 2;
   padding-left: 25px;
 }
 .single-article-text h4 {
@@ -402,7 +402,9 @@ h4 a:hover {
 @media screen and (max-width: 767px) {
   .container {
     max-width: none;
+    padding: 0 30px;
   }
+
   body .lock {
     overflow: hidden;
   }
@@ -471,5 +473,21 @@ h4 a:hover {
   }
   .header_list li {
     margin-bottom: 20px;
+  }
+
+  .main-article-area {
+    margin-right: 0;
+    margin-bottom: 100px;
+  }
+  .main-article-text button {
+    margin-top: 10px;
+  }
+  .single-article {
+    margin-right: 0;
+    margin-bottom: 30px;
+    height: 160px;
+  }
+  .single-article-text {
+    flex: 2.51;
   }
 }
