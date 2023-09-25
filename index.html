@@ -35,22 +35,27 @@
   </head>
   <body>
     <div class="wrapper d-md-flex flex-column">
-      <header>
-        <div
-          class="container d-md-flex justify-content-between align-items-center"
-        >
-          <div>
-            <a href="/"> <img src="./assets/images/logo.svg" alt="logo" /></a>
+      <header class="header">
+        <div class="container">
+          <div class="header_body">
+            <div>
+              <a href="/" class="header_logo">
+                <img src="./assets/images/logo.svg" alt="logo"
+              /></a>
+            </div>
+            <div class="header_burger">
+              <span></span>
+            </div>
+            <nav class="header_menu">
+              <ul class="header_list">
+                <li><a href="/" class="header_link">Home</a></li>
+                <li><a href="/" class="header_link">New</a></li>
+                <li><a href="/" class="header_link">Popular</a></li>
+                <li><a href="/" class="header_link">Trending</a></li>
+                <li><a href="/" class="header_link">Categories</a></li>
+              </ul>
+            </nav>
           </div>
-          <nav>
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">New</a></li>
-              <li><a href="/">Popular</a></li>
-              <li><a href="/">Trending</a></li>
-              <li><a href="/">Categories</a></li>
-            </ul>
-          </nav>
         </div>
       </header>
 
@@ -189,5 +194,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- script.js -->
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
