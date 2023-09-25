@@ -122,7 +122,7 @@ Creating hamburger menu
 
 ### Continued development
 
-I've stack on the dark background when meu is open, if you have a suggestion, please contact me
+I've stack on the dark background when menu is open, if you have suggestions, please contact me
 
 ### Useful resources
 
