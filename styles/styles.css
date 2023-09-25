@@ -1,28 +1,3 @@
-/* ## Colors
-
---primary
-
-- Soft orange: hsl(35, 77%, 62%)
-- Soft red: hsl(5, 85%, 63%)
-
---neutral
-
-Off-white: hsl(36, 100%, 99%)
-Grayish blue: hsl(233, 8%, 79%)
-Dark grayish blue: hsl(236, 13%, 42%)
-Very dark blue: hsl(240, 100%, 5%)
-
-## Typography
-
-### Body Copy
-
-- Font size (paragraph): 15px
-
-### Font
-
-- Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700, 800
- */
 :root {
   --primary-soft-orange: hsl(35, 77%, 62%);
   --primary-soft-red: hsl(5, 85%, 63%);
@@ -116,8 +91,6 @@ body {
   position: relative;
 }
 .wrapper {
-  /* display: flex; */
-  /* flex-direction: column; */
   overflow: hidden;
   min-height: 100%;
   position: relative;
@@ -136,32 +109,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
   display: block;
 }
-/* header {
-  padding-top: 37px;
-}
-
-nav ul {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: end;
-}
-ul li {
-  padding: 0;
-  list-style: none;
-  margin-right: 40px;
-}
-ul li:last-child {
-  margin-right: 0;
-}
-li a {
-  color: var(--neutral-dark-grayish-blue);
-}
-li a:active,
-li a:hover {
-  cursor: pointer;
-  color: var(--primary-soft-red);
-} */
 .header {
   position: fixed;
   padding: 20px 0;
@@ -242,7 +189,6 @@ main {
   width: 100%;
 }
 .main-article-text {
-  /* display: flex; */
   margin-top: 30px;
 }
 .main-article-text h1 {
@@ -314,12 +260,10 @@ h3 a:hover {
 }
 
 .three-articles-area {
-  /* display: flex; */
   padding-top: 10px;
 }
 
 .three-articles-area article {
-  /* display: flex; */
   color: var(--neutral-dark-grayish-blue);
 }
 
@@ -331,8 +275,6 @@ h3 a:hover {
   margin-right: 0;
 }
 .single-article-text {
-  /* justify-content: space-between;
-    align-items: stretch; */
   flex: 2;
   padding-left: 25px;
 }
