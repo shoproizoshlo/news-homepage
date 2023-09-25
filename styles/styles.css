@@ -166,7 +166,7 @@ li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: yellowgreen;
+  background-color: var(--neutral-off-white);
   z-index: 2;
 }
 .header_body {
@@ -406,21 +406,24 @@ h4 a:hover {
   .container {
     max-width: none;
     padding: 0 30px;
+    margin: 0;
   }
 
   body .lock {
     overflow: hidden;
   }
-
+  .header {
+    padding: 0;
+  }
   .header_burger {
     display: block;
     position: relative;
-    width: 50px;
+    width: 40px;
     height: 20px;
     z-index: 3;
   }
   .header_burger span {
-    background-color: black;
+    background-color: var(--neutral-very-dark-blue);
     position: absolute;
     width: 100%;
     height: 3px;
@@ -430,7 +433,7 @@ h4 a:hover {
   .header_burger::before,
   .header_burger::after {
     content: "";
-    background-color: black;
+    background-color: var(--neutral-very-dark-blue);
     position: absolute;
     width: 100%;
     height: 3px;
@@ -460,24 +463,31 @@ h4 a:hover {
     position: fixed;
     top: 0;
     left: 100%;
-    width: 60%;
+    width: 70%;
     height: 100%;
-    background-color: wheat;
-    padding: 90px 0 0 0;
+    background-color: var(--neutral-off-white);
+    padding: 200px 0 0 0;
     overflow: auto;
     transition: all 0.3s ease;
   }
   .header_menu.active {
-    left: 40%;
+    left: 30%;
   }
 
   .header_list {
     display: block;
   }
   .header_list li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+  }
+  li a {
+    color: var(--neutral-very-dark-blue);
   }
 
+  .articles {
+    margin-top: 140px;
+  }
   .main-article-area {
     margin-right: 0;
     margin-bottom: 100px;
@@ -503,6 +513,18 @@ h4 a:hover {
 @media screen and (max-width: 400px) {
   .container {
     padding: 0 20px;
+  }
+  .header_menu {
+    padding: 120px 0 0 0;
+  }
+  .articles {
+    margin-top: 85px;
+  }
+  .main-article-text {
+    margin-top: 20px;
+  }
+  .main-article-text h1 {
+    font-size: 2.5em;
   }
   .new-article-area {
     padding: 23px;
