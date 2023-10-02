@@ -34,32 +34,24 @@
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
   <body>
-    <div class="wrapper d-md-flex flex-column">
-      <header class="header">
-        <div class="container">
-          <div class="header_body">
-            <div>
-              <a href="/" class="header_logo">
-                <img src="./assets/images/logo.svg" alt="logo"
-              /></a>
-            </div>
-            <div class="header_burger">
-              <span></span>
-            </div>
-            <nav class="header_menu">
-              <ul class="header_list">
-                <li><a href="/" class="header_link">Home</a></li>
-                <li><a href="/" class="header_link">New</a></li>
-                <li><a href="/" class="header_link">Popular</a></li>
-                <li><a href="/" class="header_link">Trending</a></li>
-                <li><a href="/" class="header_link">Categories</a></li>
-              </ul>
-            </nav>
-          </div>
+    <div class="overlay"></div>
+    <header>
+      <div class="container">
+        <img src="./assets/images/logo.svg" alt="" />
+        <div id="menu-icon">
+          <img onclick="teste()" src="./assets/images/icon-menu.svg" alt="" />
         </div>
-      </header>
-
-      <main>
+        <ul class="nav-menu" id="menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">New</a></li>
+          <li><a href="">Popular</a></li>
+          <li><a href="">Trending</a></li>
+          <li><a href="">Categories</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper d-md-flex flex-column">
         <div class="container">
           <div class="articles d-md-flex">
             <div class="main-article-area">
@@ -176,8 +168,9 @@
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
+
     <footer>
       <div class="container">
         <div class="attribution">
@@ -198,6 +191,21 @@
       crossorigin="anonymous"
     ></script>
     <!-- script.js -->
-    <script src="./scripts/script.js"></script>
+    <!-- <script src="./scripts/script.js"></script> -->
+    <script>
+      function teste() {
+        if (document.getElementById("menu").style.display == "block") {
+          document.getElementById("menu").style.display = "none";
+          document.getElementById("menu-icon").innerHTML =
+            '<img onclick="teste()" src="./assets/images/icon-menu.svg" alt="">';
+          document.querySelector(".overlay").style.display = "none";
+        } else {
+          document.getElementById("menu").style.display = "block";
+          document.getElementById("menu-icon").innerHTML =
+            '<img onclick="teste()" src="./assets/images/icon-menu-close.svg" alt="">';
+          document.querySelector(".overlay").style.display = "block";
+        }
+      }
+    </script>
   </body>
 </html>
