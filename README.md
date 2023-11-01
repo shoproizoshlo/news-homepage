@@ -1,6 +1,6 @@
 # Frontend Mentor - News homepage solution
 
-This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [News homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl). 
 
 ## Table of contents
 
@@ -31,7 +31,6 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: https://github.com/shoproizoshlo/news-homepage-main
 - Live Site URL: https://sue-news-homepage-main.netlify.app/
 
 ## My process
@@ -127,10 +126,8 @@ I've stack on the dark background when menu is open, if you have suggestions, pl
 ### Useful resources
 
 - [Video how to make a hamburger menu](https://www.youtube.com/watch?v=chJQofBSx94&list=PLM6XATa8CAG6IJvQBkrTTNZmpIcyS2Avk&index=4) - Language - Russian, but feel free to open subtitles.
-- [Examples of menus](https://alvarotrigo.com/blog/hamburger-menu-css/) -
+- [Examples of menus](https://alvarotrigo.com/blog/hamburger-menu-css/) 
 
 ## Author
 
-- Website - [Sue Brechko](https://github.com/shoproizoshlo)
 - Frontend Mentor - [@shoproizoshlo](https://www.frontendmentor.io/profile/shoproizoshlo)
-- Twitter - [@suereact](https://www.twitter.com/suereact)
